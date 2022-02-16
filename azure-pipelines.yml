@@ -8,16 +8,16 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'bokeh_connect'
+  azureServiceConnectionId: 'bokeh_connect' # DevOps で設定した Service Connection の名称
   
   # Web app name
-  webAppName: 'bokehapp'
+  webAppName: 'bokehapp' # AppServiceの名称
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'bokeh_env'
+  environmentName: 'bokeh_env' # DevOpsで作成したEnvironmentの名称
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
